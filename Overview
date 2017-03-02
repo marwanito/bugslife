@@ -1,0 +1,149 @@
+Premier rendu:
+Seulement partie main + modélisation
+
+
+voir liste chainée
+créer fourmi dans fourmiliere + utiliser liste chainée pour liste de fourmis.
+
+fonction mise à jour dans modèle, va chercher toutes les infos (coordonnées par ex) et comparer toutes les données pour savoir si y a qqch à mettre à jour. 
+
+
+
+Fourmi
+Data structure: 
+Taille : RAYON_FOURMI
+Position : X-Y
+Type: ouvrière-garde
+
+FONCTIONS:
+get_position()
+set_position()
+get_type()
+set_type()
+destruct_fourmi()
+Find_target() -> right choice algorithm
+
+
+
+
+
+
+questions: DS for garde et ouvrière or just one?
+
+Fourmilière:
+Data structure:
+nb_fourmi
+nb_fourmi_garde
+nb_fourmi_ouvriere
+Total_food
+Origine
+Rayon fourmiliere (voir formule)
+
+FUNCTION CALLS
+Creer_fourmi() + liste chainée pour les enregistrer
+
+
+
+
+
+Nourriture:
+Data structure:
+Taille: RAYON_FOOD
+Valeur nutritive: VAL_FOOD
+Position : X-Y
+
+
+FONCTIONS:
+get_position()
+set_position
+
+
+Questions: where to put FOOD_RATE and deal with probabilities? Should you have set positions for all modules?
+
+
+
+Utilitaire:
+ID: Objets géométriques nécessaires à la gestion du système de coordonnées, possède des types concrets (sera passée sans interface?)
+Data structures:
+-Vecteurs->
+-Point->
+-Cercle->
+Fonctions -> 
+-addition de vecteurs…
+-test proximity
+
+
+
+Questions: vérifier proximités ici ou ailleurs? non probablement
+
+
+
+
+Modèle:
+LECTURE ET ÉCRITURE DES FICHIERS
+FUNCTION modele_lecture() -> traitement des données du fichier texte
+	1-Mémorisation des entités
+	2-détection des erreurs
+
+
+
+FONCTION MISE À JOUR
+
+
+
+
+
+coordonnées pour fourmi et autres -> résumé du système de coordonnées.
+
+
+Division of work:
+-Lecture des fichiers et mémorisation des entités à travers les structures de données.
+-Algorithmes -> bon chemin - 
+-Répertorier les formules diverses et variées ainsi que les contraintes.
+-MakeFile.
+-Module erreur.
+-Code some of the building blocks : Basic data structures in Module Utilitaire (Circle, point, …) and all the other data structures which are established.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSEUDO CODE
+Lecture fichiers:
+etat = DEBUT_LECTURE
+tant que (fgets == true)
+	si caractère permettant d’ignorer la ligne -> continue
+	lire ligne entiere avec fgets()
+	decoder la ligne lue avec sscanf()
+	
+
+	
